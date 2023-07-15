@@ -1,0 +1,31 @@
+#include<iostream>//single inheritance
+using namespace std;
+class course
+{
+	public:
+		int sem=2;
+		int totalno=100;
+		void getdetails()
+		{
+			cout<<"sem is "<<sem<<endl;
+			cout<<"total no is "<<totalno<<endl;
+		}
+};
+class bcacs:public course
+{
+	public:
+		int sem=3;
+		int num=300;
+		void printdetails()
+		{
+			cout<<"sem is "<<sem<<endl;
+			cout<<"num is "<<num<<endl;
+		}
+};
+int main()
+{
+	bcacs obj;
+	obj.getdetails();
+	obj.printdetails();
+	return 0;
+}
